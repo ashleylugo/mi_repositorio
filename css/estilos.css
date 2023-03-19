@@ -380,7 +380,7 @@ nav{
 
 /*DISEÑO CELULAR-media queries-INDEX*/
    
-   @media screen and (max-width:320px){
+   @media (max-width:320px){
 	
 	/*menu navegacion*/
 	nav{
