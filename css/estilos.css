@@ -1,0 +1,491 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*ESTILOS DE FUENTE */
+@font-face {
+	font-family: "michroma";
+    src:url(../fuentes/Michroma/Michroma-Regular.ttf);
+    font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: "michroma";
+    src:url(../fuentes/Michroma/Michroma-Regular.ttf);
+    font-weight: normal;
+	font-style:normal;
+}
+
+header{
+	height: 300px;
+	width: 100%;
+	background-image: url("../imagenes/banner3.jpg");
+	background-position:0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1{
+	font-family: "michroma";
+	background-color:black;
+	color:greenyellow;
+	font-size: 50px;
+    text-align:center;
+    margin: 0;
+}
+
+h1:hover{
+	color: azure;
+	
+}
+
+.cabecera img{
+	opacity: .60;
+}
+
+.cabecera img:hover{
+     opacity: 1;
+}
+
+/*Estilos del NAV*/
+
+nav{
+	display: flex;
+	align-items: end;
+}
+
+.container-fluid{
+	background:yellowgreen;
+	display: flex;
+	align-items: end;
+	
+}
+
+.navbar-nav a{
+	color: white;
+	font-size: 20px;
+	align-content: end;
+}
+
+/*ESTILOS DEL MAIN-INDEX (MAQUINAS, CLASES, INSTALACIONES)*/
+
+.contenedor-padre{
+			background-image: url(/imagenes/fondo-index.jpg);
+			background-position: 100%;
+			display: flex;
+			align-items: center;
+			justify-content:space-between;
+			/*gap:10px*/
+			height: 700px;
+			padding: 10px 100px 50px;			
+}
+
+.maquinas{
+		box-sizing: border-box;
+		width: 300px;
+		height: 300px;
+        background-color:rgb(188, 233, 121);
+		border: 3px solid;
+		padding: 20px;
+		overflow: scroll;
+}
+
+.clases{
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	background-color:rgb(188, 233, 121);
+	border: 3px solid;
+	padding: 20px;
+	overflow: scroll;
+}
+
+.instalaciones{
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	background-color:rgb(188, 233, 121);
+	border: 3px solid;
+	padding: 20px;
+	overflow: scroll;
+}
+
+.sobre-nosotros{
+	background-color:black;
+}
+
+.sobre-nosotros h3{
+	font-family: "michroma";
+	text-align: center;
+	font-size: 40px;
+	color:yellowgreen
+}
+
+.sobre-nosotros p{
+	font-family: "michroma";
+	padding: 20px;
+	color:yellowgreen;
+	line-height: 30px;
+	font-size: 20px;
+	
+}
+
+/*ESTILOS DEL FOOTER*/
+
+.pie-pagina{
+			background-image: url(/imagenes/fondo-index.jpg);
+			background-position: bottom right;
+			display: flex;
+			justify-content:space-evenly;
+			height: 200px;
+			padding: 20px 0px;
+}
+
+#footer{
+	        background-color: rgb(103, 102, 102);
+			background-position: bottom right;
+			display: flex;
+			justify-content:space-evenly;
+			height: 200px;
+			padding: 20px 0px;
+}
+
+.lista-sedes h3{
+         color:rgb(222, 220, 220);
+		 /*margin-top: 20px;*/
+}
+
+.lista-sedes ul{
+	color: rgb(222, 220, 220);
+}
+
+.lista-sedes li{
+	list-style-type: none;
+	margin-left: px;
+
+}
+
+.lista-contacto{
+        color: rgb(222, 220, 220);
+		/*margin-top: 20px;*/
+		   
+}
+
+.lista-contacto li{
+        list-style-type: none;
+}
+
+.suscripcion{
+	color: white;
+}
+
+.redes ul{
+	color: white;
+	list-style-type: none;
+	font-size: 25px;
+}
+
+.bxl-instagram{
+	color: white;
+	font-size: 50px;
+}
+
+.bxl-facebook-square{
+	color: white;
+	font-size: 50px;
+}
+
+.bxl-whatsapp {
+	color: white;
+	font-size: 50px;
+}
+
+/*ESTILOS CARDS- PAG CLASES*/
+
+.cards-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card{
+	box-sizing: border-box;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/*overflow: scroll;*/
+	border: 1px solid rgb(3, 3, 3);
+	border-radius: 8px;
+}
+
+.card .card-img{
+	position: relative;
+	width: 100%;
+}
+
+.card-img img{
+           width: 100%;
+}
+
+.card-titulo{
+            position: absolute;
+			bottom: 0;
+			padding: 10px 3px;
+			color:white;
+			/*background-color:hsla (0, 0%, 0%, 0.361);*/
+			width: 100%; /*opacity: 0;*/
+}
+
+.card-img #title-zumba{
+	color: black;
+}
+
+/*ESTILOS DE CARDS CON GRID*/
+
+.cards-container{
+	background-color:black;
+       /*display: grid;*/
+	   grid-template-columns: 1fr 1fr 1fr 1fr ;
+	   padding: 10px;
+	   gap: 10px;
+}
+
+.card-content{
+	color:black;
+}
+
+/*PSEUDOCLASES*/
+
+.cards-container div.card:nth-child(1){
+	background-color:rgb(188, 233, 121);
+}
+
+.cards-container div.card:nth-child(2){
+	background-color:rgb(185, 187, 182);
+}
+
+.cards-container div.card:nth-child(3){
+	background-color:rgb(188, 233, 121);
+}
+
+.cards-container div.card:nth-child(4){
+	background-color:rgb(185, 187, 182);
+}
+
+/* PAG. MAQUINAS-GRID-GALLERY*/
+
+.grid-gallery{
+	   width: 100%;
+	   background-color: black;
+       display: grid;
+	   grid-template-columns:1fr 1fr 1fr;
+	   padding: 10px 70px;
+	   gap: 10px;
+	   justify-content: center;
+}
+
+.grid-gallery img{
+	border-radius: 10px;
+}
+
+.grid-gallery img:hover{
+	opacity: .75;
+}
+
+.tecnologia{
+	/*display: flex;*/
+	background-color:black;
+	height: 100px;
+	width:100%;
+}
+
+.tecnologia h3{
+	font-family: "michroma";
+	display: flex;
+	color:yellowgreen;
+	justify-content: center;
+	font-size: 40px;
+}
+
+/*DISEÑO TABLET- media queries- index*/
+
+@media (max-width: 768px){
+	nav{
+		display:grid;
+		align-items: end;
+	}
+	
+	.container-fluid{
+		background:yellowgreen;
+		display: flex;
+		
+	}
+	
+	.navbar-nav a{
+		color: white;
+		font-size: 20px;
+		align-content: end;
+	}
+
+	.pie-pagina{
+		display:flex;
+		height: 220px	
+	}
+
+	.redes ul{
+		font-size: 15px;
+	}
+
+	.bxl-instagram{
+		font-size: 20px;
+	}
+	
+	.bxl-facebook-square{
+		font-size: 20px;
+	}
+	
+	.bxl-whatsapp {
+		font-size: 25px;
+	}
+
+	/* Pag.Maquinas-Gallery*/
+
+   .grid-gallery{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	align-content: center;
+   }
+
+   .tecnologia{
+	width: 100%;
+   }
+
+   .tecnologia h3{
+	padding: 10px;
+	 text-align: center;
+	 font-size: 1.50em;
+   }
+
+   .contenedor-padre{
+	display: grid;
+	column-gap: 5px;
+	height: 1000px;
+	justify-content:center;
+}
+   } 
+
+/*DISEÑO CELULAR-media queries-INDEX*/
+   
+   @media screen and (max-width:320px){
+	
+	/*menu navegacion*/
+	nav{
+		display:grid;
+		align-items: end;
+	}
+	
+	.container-fluid{
+		background:yellowgreen;
+		display: flex;	
+	}
+	
+	.navbar-nav a{
+		color: white;
+		font-size: 20px;
+		align-content: end;
+	}
+
+	/*estilos contenedores*/
+
+	.contenedor-padre{
+		display: grid;
+		column-gap: 5px;
+		height: 1000px;
+		justify-content:center;
+   }
+
+   .sobre-nosotros h3{
+		font-size: 20px;	
+}
+
+	.sobre-nosotros p{
+		line-height: 30px;
+		font-size: 15px;
+}
+
+/*FOOTER*/
+
+.pie-pagina{
+	background-position: bottom right;
+	display:grid;
+	height: 300px;
+	grid-template-columns:1fr 1fr;
+	
+}
+.lista-sedes h3{
+	padding: 0px 20px;
+	font-size: 15px;
+}
+
+.lista-sedes li{
+	font-size: 15px;
+}
+
+.lista-contacto h3{
+	font-size: 15px;
+}
+
+.lista-contacto li{
+	font-size: 15px;
+}
+
+.suscripcion span{
+	padding: 0px 20px;
+	font-size: 15px;
+}
+
+.redes ul{
+	font-size: 15px;
+}
+
+.bxl-instagram{
+	font-size: 20px;
+}
+
+.bxl-facebook-square{
+	font-size: 20px;
+}
+
+.bxl-whatsapp {
+	font-size: 20px;
+}
+
+.suscripcion button{
+	padding: 0px 30px;
+	font-size: 15px;
+}
+
+/*Pag. MAQUINAS*/
+
+.grid-gallery{
+	display: grid;
+	grid-template-columns: 1fr;
+   }
+
+.tecnologia h3{
+	font-size: 20px;
+}   
+
+/*FOOTER DE MAQUINAS*/
+
+#footer{
+	display:grid;
+	height: 300px;
+	grid-template-columns:1fr 1fr;
+}
+
+}
