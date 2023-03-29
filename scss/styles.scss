@@ -1,0 +1,326 @@
+@import "partials/reset";
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/conditional";
+
+
+
+
+/*VARIABLES*/
+/*ESTILOS DE FUENTE */
+/*ESTILOS HEADER*/
+
+header{
+	height: 300px;
+	width: 100%;
+	// background-image: url(../imagenes/banner3.jpg);
+	background-position:0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+    h1{
+        font-family: "michroma";
+        background-color:black;
+        color:greenyellow;
+        font-size: 50px;
+        text-align:center;
+        margin: 0;
+    }
+    
+    // h2{
+    //     text-align:center;
+    //     height:0px;
+    //     // font-family: "michroma";
+    //     font-size: 50px;
+    //     color: yellowgreen;
+    // }
+
+    h1:hover{
+        color: azure;   
+    }
+    img{
+        opacity: .60;
+    }
+    img:hover{
+        opacity: 1;
+   }
+}
+
+/*Estilos del NAV*/
+
+nav{
+	display: flex;
+	align-items: end;
+
+.container-fluid {
+	background:yellowgreen;
+	display: flex;
+	align-items: end;
+}
+
+.navbar-nav a{
+	color: white;
+	font-size: 20px;
+	align-content: end;
+	justify-content: flex-end;
+   }
+}
+
+/*ESTILOS DEL MAIN-INDEX (MAQUINAS, CLASES, INSTALACIONES)*/
+
+.contenedor-padre{
+    background-image: url(../imagenes/fondo-index.jpg);
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /*gap:10px*/
+    height: 700px;
+    padding: 10px 100px 50px;			
+
+.maquinas, .clases, .instalaciones {
+    box-sizing: border-box;
+    width:300px;
+    height: 300px;
+    background-color:rgb(188, 233, 121);
+    border: 3px solid;
+    padding: 20px;
+    overflow: scroll;
+    }
+
+h3{
+font-family:"michroma";
+font-size: $small;
+text-align: center;
+  }
+}
+
+.sobre-nosotros{
+background-color:black;
+
+h3{
+font-family: "michroma";
+text-align: center;
+font-size: 40px;
+color:yellowgreen
+}
+
+p{
+font-family: "michroma";
+padding: 20px;
+color:yellowgreen;
+line-height: 30px;
+font-size: 20px;
+}
+}
+
+/*ESTILOS DEL FOOTER*/
+
+.pie-pagina{
+    background-image: url(../imagenes/fondo-index.jpg);
+    background-position: bottom right;
+    display: flex;
+    justify-content:space-evenly;
+    height: 250px;
+    padding: 20px 0px;    
+
+.lista-sedes{
+    h3, ul{
+ color:rgb(222, 220, 220);
+        }
+    li{
+list-style-type: none;
+font-size: 20px;
+    }
+}
+
+.lista-contacto {
+color: rgb(222, 220, 220);
+   
+li{
+list-style-type: none;
+font-size: 20px;
+  }
+}
+.suscripcion{
+color: white;
+font-size: 20px;
+}
+
+.redes {
+    color: white;
+
+ul  {
+    list-style-type: none;
+    font-size: 25px;
+    }
+.bxl-instagram{
+color: white;
+font-size: 50px;
+    }
+
+.bxl-facebook-square{
+color: white;
+font-size: 50px;
+    }
+
+.bxl-whatsapp {
+color: white;
+font-size: 50px;
+    }
+    }
+}
+
+#footer{
+    background-color: rgb(103, 102, 102);
+    background-position: bottom right;
+    display: flex;
+    justify-content:space-evenly;
+    height: 250px;
+    padding: 20px 0px;
+
+.lista-sedes{
+        h3, ul{
+     color:rgb(222, 220, 220);
+    }
+        li{
+    list-style-type: none;
+    font-size: 20px;
+    }
+    }
+    
+.lista-contacto {
+    color: rgb(222, 220, 220);
+       
+    li{
+    list-style-type: none;
+    font-size: 20px;
+      }
+    }
+.suscripcion{
+    color: white;
+    font-size: 20px;
+    }
+    
+.redes {
+        color: white;
+    
+    ul  {
+        list-style-type: none;
+        font-size: 25px;
+        }
+    .bxl-instagram{
+    color: white;
+    font-size: 50px;
+        }
+    
+    .bxl-facebook-square{
+    color: white;
+    font-size: 50px;
+        }
+    
+    .bxl-whatsapp {
+    color: white;
+    font-size: 50px;
+        }
+        }
+    }
+
+/*ESTILOS CARDS- PAG CLASES*/
+
+.cards-container{
+    background-color:black;
+	display: flex;
+	justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+	padding: 10px;
+	gap: 10px;
+
+.card{
+        box-sizing: border-box;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /*overflow: scroll;*/
+        border: 1px solid rgb(3, 3, 3);
+        border-radius: 8px;
+    }
+
+    .card-img{
+        position: relative;
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+}
+
+.card-titulo h4 {
+    font-size: $medium;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 3px;
+    color:white;
+    /*background-color:hsla (0, 0%, 0%, 0.361);*/
+    width: 100%; /*opacity: 0;*/
+}
+
+#title-zumba{
+	color: black;
+    }
+}
+
+/*PSEUDOCLASES*/
+.cards-container {
+    div.card:nth-child(1){
+	background-color:rgb(188, 233, 121);
+}
+    div.card:nth-child(2){
+	background-color:rgb(185, 187, 182);
+}
+    div.card:nth-child(3){
+	background-color:rgb(188, 233, 121);
+}
+    div.card:nth-child(4){
+	background-color:rgb(185, 187, 182);
+}
+}
+
+/* PAG. MAQUINAS-GRID-GALLERY*/
+
+.grid-gallery{
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding: 10px 70px;
+    gap: 10px;
+    justify-items: center;
+
+    img{
+        border-radius: 10px;
+    }
+
+    img:hover{
+        opacity: .75;
+    }
+}
+
+.tecnologia{
+	/*display: flex;*/
+	background-color:black;
+	height: 100px;
+	width:100%;
+
+h3{
+font-family: "michroma";
+display: flex;
+color:yellowgreen;
+justify-content: center;
+font-size: 40px;
+    }
+}
+
+// @import "queries";

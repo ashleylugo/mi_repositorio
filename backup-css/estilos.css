@@ -54,20 +54,20 @@ h1:hover{
 
 nav{
 	display: flex;
-	align-items: end;
+	/* align-items: end; */
 }
 
 .container-fluid{
 	background:yellowgreen;
 	display: flex;
-	align-items: end;
+	/* align-items: end; */
 	
 }
 
 .navbar-nav a{
 	color: white;
 	font-size: 20px;
-	align-content: end;
+	/* align-content: end; */
 	justify-content: flex-end;
 }
 

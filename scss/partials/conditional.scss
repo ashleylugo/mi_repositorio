@@ -1,0 +1,14 @@
+$promocion: "sin-descuento";
+
+@if ($promocion == "descuento") {
+    header{
+        background-image: url(../imagenes/promocion.jpg);   
+    }   
+}
+
+@else if ($promocion == "sin-descuento") {
+    header{
+        background-image: url(../imagenes/banner3.jpg);  
+    } 
+}
+
