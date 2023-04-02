@@ -1,4 +1,4 @@
-$promocion: "descuento";
+$promocion: "sin-descuento";
 
 @if ($promocion == "descuento") {
     header{

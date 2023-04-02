@@ -47,8 +47,7 @@ header{
 
 nav{
 	display: flex;
-	align-items: end;
-
+    
 .container-fluid {
 	background:yellowgreen;
 	display: flex;
@@ -58,9 +57,11 @@ nav{
 .navbar-nav a{
 	color: white;
 	font-size: 20px;
-	align-content: end;
+	// align-content: end;
 	justify-content: flex-end;
+    
    }
+
 }
 
 /*ESTILOS DEL MAIN-INDEX (MAQUINAS, CLASES, INSTALACIONES)*/
@@ -81,15 +82,30 @@ nav{
     height: 300px;
     background-color:rgb(188, 233, 121);
     border: 3px solid;
+    border-radius: 10px;
     padding: 20px;
     overflow: scroll;
     }
+
+    /*Animaciones-Gradients*/
+.maquinas:hover{
+    background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+}
+
+.clases:hover{
+    background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+}
+
+.instalaciones:hover{
+    background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+}
 
 h3{
 font-family:"michroma";
 font-size: $small;
 text-align: center;
   }
+
 }
 
 .sobre-nosotros{
@@ -289,6 +305,7 @@ font-size: 50px;
 
 .grid-gallery{
     width: 100%;
+    height: 100%;
     background-color: black;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -296,12 +313,20 @@ font-size: 50px;
     gap: 10px;
     justify-items: center;
 
+
+    /*Transiciones-hover*/
+    
     img{
         border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        transition: width 1s, height 1s;
     }
 
     img:hover{
         opacity: .75;
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -323,114 +348,6 @@ font-size: 40px;
 .container div{
     border: 2px solid
 }
-
-
-/*DISEÑO CELULAR-media queries-INDEX*/
-   
-
-
-
-	/*menu navegacion*/
-// nav{
-// 		display:grid;
-// 		align-items: end;
-	
-// .container-fluid{
-// 		background:yellowgreen;
-// 		display: flex;	
-// 	}
-	
-// .navbar-nav a{
-// 		color: white;
-// 		font-size: 20px;
-// 		align-content: end;
-// 	}
-//     }
-
-
-/*estilos contenedores*/
-
-// .contenedor-padre{
-//     display: grid;
-//     column-gap: 5px;
-//     height: 1000px;
-//     justify-content:center;
-// }
-
-// .sobre-nosotros {
-// 	h3{
-// 		font-size: 20px;	
-// 	}
-
-//     p{
-//     line-height: 30px;
-//     font-size: 15px;
-// }
-// }
-
-
-/*FOOTER-CELU*/
-
-// .pie-pagina{
-//     background-position: bottom right;
-// 	display:grid;
-// 	height: 300px;
-// 	grid-template-columns:1fr 1fr;    
-
-// .lista-sedes{
-//     h3{
-//  	color:rgb(222, 220, 220);
-//  	padding: 0px 20px;
-// 	font-size: 15px;
-//     }
-
-//     li{
-// 	color:rgb(222, 220, 220);
-// 	font-size: 15px;
-//     }
-// }
-
-// .lista-contacto{
-// 	h3{
-// 		color: rgb(222, 220, 220);
-// 		font-size: 15px;
-// 	}
-// 	li{
-// 		font-size: 15px;
-// 	}
-// }
-
-// .suscripcion{
-// 	span{
-// 		padding: 0px 20px;
-// 		font-size: 15px;
-// 	}
-// 	button{
-// 		padding: 0px 30px;
-// 		font-size: 15px;
-// 	}
-// }
-
-// .redes{
-// 	ul{
-// 		font-size: 15px;
-// 	}
-// }
-
-// .bxl-instagram{
-// 	font-size: 20px;
-// }
-
-// .bxl-facebook-square{
-// 	font-size: 20px;
-// }
-
-// .bxl-whatsapp {
-// 	font-size: 20px;
-// }
-
-// }
-
 
 
 @import "partials/conditional";
