@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -16,10 +17,6 @@
   font-weight: normal;
   font-style: normal;
 }
-header {
-  background-image: url(../imagenes/banner3.jpg);
-}
-
 /*VARIABLES*/
 /*ESTILOS DE FUENTE */
 /*ESTILOS HEADER*/
@@ -132,11 +129,11 @@ nav .navbar-nav a {
   font-size: 20px;
 }
 .pie-pagina .suscripcion {
-  color: white;
+  color: rgb(222, 220, 220);
   font-size: 20px;
 }
 .pie-pagina .redes {
-  color: white;
+  color: rgb(222, 220, 220);
 }
 .pie-pagina .redes ul {
   list-style-type: none;
@@ -178,11 +175,11 @@ nav .navbar-nav a {
   font-size: 20px;
 }
 #footer .suscripcion {
-  color: white;
+  color: rgb(222, 220, 220);
   font-size: 20px;
 }
 #footer .redes {
-  color: white;
+  color: rgb(222, 220, 220);
 }
 #footer .redes ul {
   list-style-type: none;
@@ -284,6 +281,186 @@ nav .navbar-nav a {
   color: yellowgreen;
   justify-content: center;
   font-size: 40px;
+}
+
+.container div {
+  border: 2px solid;
+}
+
+/*DISEÑO CELULAR-media queries-INDEX*/
+/*menu navegacion*/
+/*estilos contenedores*/
+/*FOOTER-CELU*/
+header {
+  background-image: url(../imagenes/promocion.jpg);
+}
+
+/*BUCLE FOR*/
+.titulo-1 {
+  font-size: 1rem;
+}
+
+.titulo-2 {
+  font-size: 2rem;
+}
+
+.titulo-3 {
+  font-size: 3rem;
+}
+
+.titulo-4 {
+  font-size: 4rem;
+}
+
+.titulo-5 {
+  font-size: 5rem;
+}
+
+.titulo-6 {
+  font-size: 6rem;
+}
+
+/*Nota: Para que funcione tendria que comentar la clase titulo que ya tengo generada en mi css y utilizar en el html el nombre de esta clase que cree con el for o sea (titulo-X) x tendria que ser un numero del 1 al 6*/
+/*YA LO PROBE Y SI ANDA PERO HAY QUE BUSCAR OTRA IDEA DE DONDE APLICARLO*/
+/*BUCLE EACH*/
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+/*Lo mismo, es como si creara las clases primero en css y luego las uso en el html donde las necesite*/
+/*EXTEND-EJEMPLO CLASE*/
+.btn, .btn-big, .btn-medium {
+  font-size: 30px;
+  width: 80px;
+  height: 40px;
+  padding: 8px;
+  color: aqua;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-medium {
+  width: 50%;
+  height: 45px;
+}
+
+.btn-big {
+  width: 100%;
+  height: 45px;
+}
+
+/*Extend se usa para poder compartir PROPIEDADES de una clase, con otras sin tener que reescribirlas, quiere decir que btn-medium y btn-big con el @extend tienen sus propiedades originales + Las que agregamos a ellas particularmente*/
+/*MIXIN-sin parametro- en un archivo aparte de mixin y luego lo importas en el style.scss*/
+/*MIXIN-con parametros, estarian definidos por una variable, que previamente tendria que estar definida en el archivo _variables*/
+/*Para usar los mixin se tienen que llamar en el archivo ppal styles.scss con
+@include encabezados (y aqui poner los valores)*/
+/*NOTA: ESTA PARTE DE LOS MIXIN NO SE ESTA COMPILANDO EN EL CSS PORQUE NO LO IMPORTE AL ARCHIVO PPAL SOLO ANOTE LA CLASE*/
+/*DISEÑO CELULAR-media queries-INDEX*/
+@media screen and (max-width: 480px) {
+  /*Menu Navegacion*/
+  nav {
+    display: grid;
+    align-items: end;
+  }
+  .container-fluid {
+    background: yellowgreen;
+    display: flex;
+  }
+  .navbar-nav a {
+    color: white;
+    font-size: 20px;
+    align-content: end;
+  }
+  /*MAIN-Maquinas,Clases,Instalaciones*/
+  .contenedor-padre {
+    display: grid;
+    column-gap: 5px;
+    height: 1000px;
+    justify-content: center;
+  }
+  .sobre-nosotros {
+    justify-content: center;
+  }
+  .sobre-nosotros h3 {
+    font-size: 20px;
+  }
+  .sobre-nosotros p {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  /*FOOTER*/
+  .pie-pagina {
+    background-position: bottom right;
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .lista-sedes h3 {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+  .lista-sedes li {
+    font-size: 15px;
+  }
+  .lista-contacto h3 {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+  .lista-contacto li {
+    font-size: 15px;
+  }
+  .suscripcion h3 {
+    padding: 0px 20px;
+    font-size: 20px;
+  }
+  .redes ul {
+    font-size: 15px;
+  }
+  .bxl-instagram {
+    font-size: 20px;
+  }
+  .bxl-facebook-square {
+    font-size: 20px;
+  }
+  .bxl-whatsapp {
+    font-size: 20px;
+  }
+  .suscripcion button {
+    padding: 0px 30px;
+    font-size: 15px;
+  }
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tecnologia h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  /*PAGINA-CLASES*/
+  .cards-container {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

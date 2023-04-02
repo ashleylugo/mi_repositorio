@@ -1,91 +1,86 @@
 /*DISEÑO CELULAR-media queries-INDEX*/
-   
-@media (max-width:480px){
-	
-	/*menu navegacion*/
-nav{
+
+@media screen and (max-width: 480px){
+    
+/*Menu Navegacion*/
+    nav{
 		display:grid;
 		align-items: end;
+	}
 	
-.container-fluid{
+	.container-fluid{
 		background:yellowgreen;
 		display: flex;	
 	}
 	
-.navbar-nav a{
+	.navbar-nav a{
 		color: white;
 		font-size: 20px;
 		align-content: end;
-	}
-    }
-}
+	}    
 
-/*estilos contenedores*/
+/*MAIN-Maquinas,Clases,Instalaciones*/
+    .contenedor-padre{
+		display: grid;
+		column-gap: 5px;
+		height: 1000px;
+		justify-content:center;
+   }
 
-.contenedor-padre{
-    display: grid;
-    column-gap: 5px;
-    height: 1000px;
-    justify-content:center;
-}
+   .sobre-nosotros{
+	justify-content: center;
 
-.sobre-nosotros {
 	h3{
-		font-size: 20px;	
-	}
+		font-size: 20px;
+}
 
-    p{
+	p{
     line-height: 30px;
     font-size: 15px;
 }
+
 }
 
-/*FOOTER-CELU*/
+/*FOOTER*/
 
 .pie-pagina{
-    background-position: bottom right;
+	background-position: bottom right;
 	display:grid;
-	height: 300px;
-	grid-template-columns:1fr 1fr;    
-
+	height: 700px;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	text-align: center;
+	
+}
 .lista-sedes{
-    h3{
- 	color:rgb(222, 220, 220);
- 	padding: 0px 20px;
-	font-size: 15px;
-    }
+	h3{
+		padding: 0px 20px;
+		font-size: 20px;
+	}
 
-    li{
-	color:rgb(222, 220, 220);
-	font-size: 15px;
-    }
+	li{
+		font-size: 15px;
+	}
+
 }
 
 .lista-contacto{
 	h3{
-		color: rgb(222, 220, 220);
-		font-size: 15px;
+		padding: 0px 20px;
+		font-size: 20px;
 	}
 	li{
 		font-size: 15px;
 	}
 }
 
-.suscripcion{
-	span{
-		padding: 0px 20px;
-		font-size: 15px;
-	}
-	button{
-		padding: 0px 30px;
-		font-size: 15px;
-	}
+.suscripcion h3{
+	padding: 0px 20px;
+	font-size: 20px;
 }
 
-.redes{
-	ul{
-		font-size: 15px;
-	}
+.redes ul{
+	font-size: 15px;
 }
 
 .bxl-instagram{
@@ -99,5 +94,37 @@ nav{
 .bxl-whatsapp {
 	font-size: 20px;
 }
-    
- }
+
+.suscripcion button{
+	padding: 0px 30px;
+	font-size: 15px;
+}
+
+.grid-gallery{
+	display: grid;
+	grid-template-columns: 1fr;
+   }
+
+   .tecnologia h3{
+	font-size: 20px;
+	text-align: center;
+}
+
+#footer{
+	display:grid;
+	height: 700px;
+	grid-template-columns:1fr;
+	text-align: center;
+}
+
+/*PAGINA-CLASES*/
+.cards-container{
+	display: grid;
+	column-gap: 5px;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	}
+}
+
+
+
