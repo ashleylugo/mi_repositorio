@@ -1,5 +1,43 @@
 /*DISEÑO CELULAR-media queries-INDEX*/
 
+@media screen and (max-width: 768px){
+
+.pie-pagina{
+	background-position: bottom right;
+	display:grid;
+	height: 700px;
+	grid-template-columns: 1fr;
+	justify-items: center;
+    text-align: center;
+		}
+
+.cards-container{
+	display: grid;
+	column-gap: 5px;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	}
+
+#footer{
+	display:grid;
+	height: 700px;
+	grid-template-columns:1fr;
+	text-align: center;
+	}
+
+
+.grid-gallery{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+
+.tecnologia h3{
+	font-size: 30px;
+	text-align: center;
+	} 
+
+}
+
 @media screen and (max-width: 480px){
     
 /*Menu Navegacion*/
@@ -125,6 +163,8 @@
 	justify-items: center;
 	}
 }
+
+
 
 
 
