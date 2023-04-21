@@ -5,6 +5,14 @@
 
 /*ESTILOS HEADER*/
 
+// .carousel-inner{
+//     width: 100%;
+//     height: 500px;
+//     ;
+    
+// }
+
+
 header{
 	height: 300px;
 	width: 100%;
@@ -47,7 +55,6 @@ nav{
 .navbar-nav a{
 	color: white;
 	font-size: 20px;
-	justify-content: flex-end; 
    }
 
 }
@@ -57,40 +64,36 @@ nav{
 .contenedor-padre{
     background-image: url(../imagenes/fondo-index.jpg);
     background-position: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    height: 700px;
-    padding: 10px 100px 50px;			
+    height: 700px;			
 
-.maquinas, .clases, .instalaciones {
-    box-sizing: border-box;
-    width:300px;
-    height: 300px;
-    background-color:rgb(188, 233, 121);
-    border: 3px solid;
-    border-radius: 10px;
-    padding: 20px;
-    overflow: scroll;
-    }
+.container{
 
-    /*Animaciones-Gradients*/
-.maquinas:hover{
-    background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+a{
+    color: black;
 }
 
-.clases:hover{
-    background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+.btn{
+    border-color: black;
 }
 
-.instalaciones:hover{
+h3{
+    text-align: center;
+}
+
+.col-md-4{
     background-image: linear-gradient(to bottom, yellowgreen, rgb(149, 154, 149));
+    margin: 80px;    
+}
+.row{
+    border: none;
+   }
 }
 
 h3{
 font-family:"michroma";
 font-size: $small;
 text-align: center;
+padding: 5px;
   }
 
 }
@@ -243,7 +246,6 @@ font-size: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        /*overflow: scroll;*/
         border: 1px solid rgb(3, 3, 3);
         border-radius: 8px;
     }
@@ -263,13 +265,17 @@ font-size: 50px;
     bottom: 0;
     padding: 10px 3px;
     color:white;
-    /*background-color:hsla (0, 0%, 0%, 0.361);*/
-    width: 100%; /*opacity: 0;*/
+    width: 100%;
 }
 
 #title-zumba{
 	color: black;
     }
+
+.card-content{
+    padding: 10px;
+    text-align: start;
+}
 }
 
 /*PSEUDOCLASES*/
@@ -300,7 +306,6 @@ font-size: 50px;
     gap: 10px;
     justify-items: center;
 
-
     /*Transiciones-hover*/
     
     img{
@@ -318,7 +323,6 @@ font-size: 50px;
 }
 
 .tecnologia{
-	/*display: flex;*/
 	background-color:black;
 	height: 100px;
 	width:100%;
@@ -352,7 +356,6 @@ h2{
     font-family: "michroma";
     color: yellowgreen;
     font-size: 20px;
-    // background-color: white;
     margin-top: 150px;    
 }
     
@@ -382,7 +385,6 @@ h1{
 
 .formulario{
     display: flex;
-    // background-color: coral;
     flex-direction: column;
     width: 80%;
     padding: 20px;
@@ -423,7 +425,6 @@ h2{
     margin-top: 20px;
     width: 45%;
     height: 60px;
-    // padding-left: 20px;
     border-radius: 5px;
     border: 3px solid;
     background-color: white;

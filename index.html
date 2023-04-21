@@ -20,14 +20,13 @@
 </head>
 
 <body>
-
     <header class="cabecera">
         <h1>GymFit</h1>
         <img src="./imagenes/logo.jpg" width="250px" alt="imagen de ejemplo">
     </header>
 
     <!--MENU HAMBURGUESA DE BOOTSTRAP-->
-
+    <div class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
@@ -36,7 +35,6 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
               <a class="nav-link" href="./index.html">Inicio</a>
               <a class="nav-link" href="./clases.html">Clases</a>
               <a class="nav-link" href="./maquinas.html">Maquinas</a>
@@ -45,75 +43,82 @@
           </div>
         </div>
       </nav>
+    </div>
 
-    <main class="contenedor-padre">
-        
-       <section class="maquinas">
+    <!-- GRID SYSTEM BOOTSTRAP -->
+  <main class="contenedor-padre">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
           <h3>MAQUINAS</h3>
-           <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae reprehenderit doloribus totam voluptates veritatis vero deleniti alias amet aliquid accusantium maxime mollitia eum, voluptatibus, neque beatae atque possimus magnam soluta.</p>
-       </section>
+          <p>Contamos con la mayor tecnologia del mercado y las gama más completa de equipos de gimnasio para el entrenamiento cardio, fuerza, funcional y actividades de grupo. Nuestros equipos estan diseñados para todos los tipos de usuarios: desde principiantes hasta profesionales.</p>
+          <a href="./maquinas.html" class="btn btn-outline-primary rounded-0 float-end">Mas detalles</a>
+        </div>
 
-       <section class="clases">
+        <div class="col-md-4">
           <h3>CLASES</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolores assumenda reprehenderit ducimus qui facere voluptatem quas? Laborum tempora, iste ad nemo debitis rem eveniet, enim ut minima, corporis quas.</p>
-       </section>
+          <p>Contamos con la mayor variedad de clases para que lleves tu entrenamiento al siguiente nivel. Son todas clases guiadas con profesores de técnicas que guiaran tu entrenamiento en todo momento. Clases multinivel. Vení a entrenarte y divertirte al mismo tiempo</p>
+          <a href="./clases.html" class="btn btn-outline-primary rounded-0 float-end">Mas detalles</a>
+        </div>
 
-       <section class="instalaciones">
-           <h3>INSTALACIONES</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ut laudantium excepturi ratione quam numquam placeat harum sunt, suscipit fugit, ad quas architecto inventore voluptatem? Vel sed ea explicabo amet!</p>
-       </section>
+        <div class="col-md-4">
+          <h3>INSTALACIONES</h3>
+          <p>A tu disposicion vas a tener: sala cardiovascular, sala de musculacion, area de fitness funcional, zona de pesas libres, sala de clases aerobicas, salon para boxeo, salon para TRX, duchas, baños, vestuarios, lockers y mucho más. <strong>Te esperamos</strong></p>
+          <a href="#" class="btn btn-outline-primary rounded-0 float-end">Mas detalles</a>
+        </div>
+      </div>
+    </div>
+</main>
 
-    </main>
-
-    <aside class="sobre-nosotros">
-         <h3>SOBRE NOSOTROS</h3>
-         <p>
-            -En este gimnasio no juzgamos.<br>
-            -Somos una sociedad diversa y tenemos una cultura de diversión.<br>
-            -Nada es mucho ni muy poco.<br>
-            -Buscamos animarte, entusiasmarte y entretenerte.<br>
-            -No hay un solo tipo. Ni una sola razón. Ni un solo camino.<br>
-            -No existen miradas que desaprueben.<br>
-            -Hay lugar para todos.<br>
-            -Cualquier persona que nos elija para alcanzar sus objetivos y respete al prójimo será bienvenida.<br>
-        </p>
-    </aside>
+<aside class="sobre-nosotros">
+  <h3>SOBRE NOSOTROS</h3>
+    <p>
+      -En este gimnasio no juzgamos.<br>
+      -Somos una sociedad diversa y tenemos una cultura de diversión.<br>
+      -Nada es mucho ni muy poco.<br>
+      -Buscamos animarte, entusiasmarte y entretenerte.<br>
+      -No hay un solo tipo. Ni una sola razón. Ni un solo camino.<br>
+      -No existen miradas que desaprueben.<br>
+      -Hay lugar para todos.<br>
+      -Cualquier persona que nos elija para alcanzar sus objetivos y respete al prójimo será bienvenida.<br>
+    </p>
+</aside>
 
     <!-- FOOTER -->
-    <footer class="pie-pagina">
+<footer class="pie-pagina">
              
-        <div class="lista-sedes">
-            <h3>Nuestras Sedes</h3> 
-            <ul>
-                <li>Caballito</li>
-                <li>Flores</li>
-                <li>Almagro</li>
-                <li>Nuñez</li>
-            </ul>
-        </div>
+  <div class="lista-sedes">
+    <h3>Nuestras Sedes</h3> 
+      <ul>
+          <li>Caballito</li>
+          <li>Flores</li>
+          <li>Almagro</li>
+          <li>Nuñez</li>
+      </ul>
+  </div>
 
-        <div class="lista-contacto">
-            <h3>Contacto</h3>
-            <ul>
-                <li class="contacto">info@gymfit.com.ar</li>
-                <li class="contacto">0800-123-4567</li>
-            </ul>
-        </div>
+  <div class="lista-contacto">
+    <h3>Contacto</h3>
+        <ul>
+          <li class="contacto">info@gymfit.com.ar</li>
+          <li class="contacto">0800-123-4567</li>
+        </ul>
+  </div>
 
-        <div class="suscripcion">
-           <h3 class="ins">Inscribete</h3>
-           <input type="email" name="newsletter" id=""/><br>
-           <button>Enviar</button>
-        </div>   
+  <div class="suscripcion">
+    <h3 class="ins">Inscribete</h3>
+      <input type="email" name="newsletter" id=""/><br>
+      <button>Enviar</button>
+  </div>   
          
-        <div class="redes">
-            <ul>
-                <li><i class='bx bxl-instagram'></i> @fitgym</li>
-                <li><i class='bx bxl-facebook-square'></i> @fitgym</li>
-                <li><i class='bx bxl-whatsapp'></i> +54 11666231</li>
-            </ul>   
-        </div>         
-    </footer>
+  <div class="redes">
+    <ul>
+      <li><i class='bx bxl-instagram'></i> @fitgym</li>
+      <li><i class='bx bxl-facebook-square'></i> @fitgym</li>
+      <li><i class='bx bxl-whatsapp'></i> +54 11666231</li>
+    </ul>   
+  </div>         
+</footer>
 
 
 <script src="./js/bootstrap.bundle.js"></script>    
